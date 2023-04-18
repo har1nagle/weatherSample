@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather project use javaScript</title>
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <div class="header">
+
+            <!-- search box -->
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" class="input-box" />
+                
+                <!-- button -->
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+        </div>
+
+        <!-- image not found -->
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!</h1> 
+            <img src="./404.png" alt="404 Error">
+        </div>
+
+        <!-- weather body image -->
+        <div class="wether-body">
+            <img src="./cloud.png" alt="Weather Image" class="weather-img">
+
+            <!-- weather box  -->
+            <div class="weather-box">
+                <p class="tempereture">0<sup>°C</sup></p>
+                <p class="description">ligth rain</p>
+            </div>
+
+            <!-- weather details -->
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>  
+                </div>
+
+                <!-- wind speed -->
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>  
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/435636f3a2.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
